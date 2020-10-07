@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajouter votre évènement</title>
+    <link rel="stylesheet" href="agenda.css">
 </head>
+
 <body>
-    
+    <main>
+        <form id="formajout">
+            <fieldset id="ajoutevent">
+                <label for="name" class="formlabel">Nom de l'évènement</label>
+                <input type="text" name="name" id="name" class="forminput"required>
+                <label for="lieu" class="formlabel">Indiquer le lieu</label>
+                <input type="text" name="lieu" id="lieu" class="forminput">
+                <label for="allday" class="formlabel">Journee Entiere</label><div class="forminput">
+                <input type="radio" name="allday" id="yes"><label for="yes">Oui</label>
+                <input type="radio" name="allday" id="no"><label for="no">Non</label></div>
+                <label for="timestart" class="formlabel">L'heure de debut</label>
+                <input type="time" step="3600" name="timestart" id="timestart" class="forminput">
+                <label for="timeend" class="formlabel">L'heure de fin</label>
+                <input type="time" step="3600" name="timeend" id="timeend" class="forminput">
+                <label for="repeat" class="formlabel">Récurrence</label><div class="forminput">
+                <input type="radio" name="repeat" id="yes"><label for="oui">Oui</label>
+                <input type="radio" name="repeat" id="no"><label for="non">Non</label></div>
+                <label for="type" class="formlabel">Choississez le type d'évènement</label>
+                <select name="type" required class="forminput">
+                    <option name="" selected="true" disabled="disabled">Choississez le type</option>
+                    <option name="type" id="personnel">Personnel</option>
+                    <option name="type" id="professionel">Professionnel </option>
+                    <option name="type" id="personnelimportant">Personnel Important</option>
+                    <option name="type" id="professionelimportant"> Professionnel Important</option>
+                </select>
+                <input type="submit" value="Ajouter votre évènement"formaction="agenda.html" id="submitbutton">
+            </fieldset>
+        </form>
+    </main>
 </body>
+
 </html>

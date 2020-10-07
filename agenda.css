@@ -2,6 +2,9 @@ body,html{
     margin:0;
     height: 100%;
     min-height: 100vh;
+    background-image: url(./horloge.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
 }
 main{
     height:100%;
@@ -14,7 +17,7 @@ table{
     width: 95%;
     height: 95%;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     border-collapse: collapse;
 }
 th{
@@ -40,7 +43,7 @@ tr{
     width:3%;
     padding-right: 1%;
 }
-#submitbutton{
+#formsubmitbutton{
     display: flex;
     justify-content: end;
     position: absolute;
@@ -81,4 +84,43 @@ tr{
     background-color:coral;
     border-radius: 10px;
     text-align: center;
+}
+#ajoutevent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:60%;
+    width:50%;
+    border-radius: 100px;
+    background-color: rgb(26,115,232,0.5);
+}
+#formajout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    color:white
+}
+.forminput{
+	width:30%;
+	margin-top: 1%;
+    height:20px;
+    border-radius:100px;
+    padding-left: 0.5%;
+    text-align: center;
+
+}
+.formlabel{
+    text-align: center;
+    margin-top: 1%;
+}
+#submitbutton{
+    margin-top:1%;
+    border-radius: 100px;
+    width:25%;
+    height:25px;
+    color:white;
+    background-color: #1a73e8;
 }
