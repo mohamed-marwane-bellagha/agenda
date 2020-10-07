@@ -5,33 +5,45 @@ body,html{
 }
 main{
     height:100%;
+    display: flex;
+    justify-content: center;
    
     
 }
 table{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     position: absolute;
     z-index: -1;
     border-collapse: collapse;
 }
+th{
+    font-size: 15px;
+    color:#1a73e8;
+    
+}
 td{
-    border-style: solid;
+    border-style: dotted;
+    border-color: lightgray;
     border-width: 1px;
-    width:14%
+    width:14%;
+    vertical-align: top;
+    padding-top: 0.5%;
+    color: white;
 }
 tr{
     
-    height:4%
+    height:3%
     
 }
 .hourtitle{
-    width:2%
+    width:3%;
+    padding-right: 1%;
 }
 #submitbutton{
     display: flex;
     justify-content: end;
-    position: relative;
+    position: absolute;
     z-index: 3;
     top:90%;
     right:4%
@@ -42,4 +54,31 @@ tr{
     border-radius: 50%;
     background-color:#1a73e8;
     color:white
+}
+#journeeentiere{
+    height:10px;
+    max-height:10px;
+    line-height: 0px;
+    
+}
+.perso{
+    background-color:lightcoral;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.pro{
+    background-color: lightsalmon;
+    border-radius: 10px;
+    text-align: center;
+}
+.proimportant{
+    background-color: salmon;
+    border-radius: 10px;
+    text-align: center;
+}
+.persoimportant{
+    background-color:coral;
+    border-radius: 10px;
+    text-align: center;
 }
